@@ -11,7 +11,5 @@ execute "install emacs" do
 end
 
 execute "set fish as default" do
-  command "chsh -s /usr/bin/fish"
-  user node[:fish][:user]
-  group node[:fish][:group]
+  command "chsh -s /usr/bin/fish #{node[:fish][:user]}"
 end
