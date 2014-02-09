@@ -6,7 +6,7 @@ execute "update apt" do
   command "apt-get update"
 end
 
-execute "install emacs" do
+execute "install fish" do
   command "apt-get -y install fish"
 end
 
